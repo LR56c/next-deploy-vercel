@@ -1,13 +1,15 @@
 import styles from "./MainLayout.module.css";
 import Head from "next/head";
-import { Navbar } from "../Navbar";
 import { FC } from "react";
+import { Navbar } from "../Navbar";
 
-interface Props {
+interface Props
+{
   children: React.ReactNode;
 }
 
-export const MainLayout : FC<Props> = ({children}) => {
+export const MainLayout: FC<Props> = ( { children } ) =>
+{
   return (
     <div className={ styles.container }>
       <Head>
@@ -26,7 +28,7 @@ export const MainLayout : FC<Props> = ({children}) => {
 
 
       <main className={ styles.main }>
-        {children}
+        { children }
       </main>
     </div>
   )
