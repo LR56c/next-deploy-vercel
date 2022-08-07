@@ -1,11 +1,11 @@
-import styles from "./MainLayout.module.css";
-import Head from "next/head";
-import { FC } from "react";
-import { Navbar } from "../Navbar";
+import styles from "./MainLayout.module.css"
+import Head from "next/head"
+import { FC } from "react"
+import { Navbar } from "../Navbar"
 
 interface Props
 {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export const MainLayout: FC<Props> = ( { children } ) =>
